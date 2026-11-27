@@ -1,6 +1,5 @@
 import type { Band } from "../components/types";
 
-// A listagem secundária permanece local, conforme os requisitos da Fase 4.
 export const BANDS: Band[] = [
   {
     id: "limp-bizkit",

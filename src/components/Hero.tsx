@@ -9,7 +9,6 @@ export function Hero() {
           Explorar álbuns
         </a>
       </div>
-      <div className="image-placeholder hero-image">Imagem de destaque</div>
     </section>
   );
 }

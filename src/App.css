@@ -141,31 +141,9 @@ h1 {
   font-size: var(--font-size-small);
   font-weight: 700;
 }
-.image-placeholder {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: 1px solid #d1d1d1;
-  background-color: var(--color-placeholder);
-  color: #777;
-  font-size: 9px;
-  text-transform: uppercase;
-  background-image:
-    linear-gradient(
-      to bottom right,
-      transparent calc(50% - 0.5px),
-      #d7d7d7 50%,
-      transparent calc(50% + 0.5px)
-    ),
-    linear-gradient(
-      to top right,
-      transparent calc(50% - 0.5px),
-      #d7d7d7 50%,
-      transparent calc(50% + 0.5px)
-    );
-}
+
 .hero-image {
-  min-height: 136px;
+  min-height: 30%;
 }
 
 .content-layout {
