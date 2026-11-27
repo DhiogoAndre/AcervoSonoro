@@ -7,7 +7,7 @@ export type BandCardProps = {
 export function BandCard({ band }: BandCardProps) {
   return (
     <article className="band-card">
-      <div className="image-placeholder band-image">{band.image}</div>
+      <img className="band-image" src={band.image} alt={`Foto de ${band.name}`} loading="lazy" />
       <h3>{band.name}</h3>
       <p>{band.description}</p>
     </article>

@@ -9,7 +9,12 @@ export type AlbumCardProps = {
 export function AlbumCard({ album, isFavorited, onToggleFavorite }: AlbumCardProps) {
   return (
     <article className="album-card">
-      <div className="image-placeholder album-cover">{album.cover}</div>
+      <img
+        className="album-cover"
+        src={album.cover}
+        alt={`Capa do álbum ${album.title}, de ${album.artist}`}
+        loading="lazy"
+      />
       <h3>{album.title}</h3>
       <p>{album.artist}</p>
       <div className="card-footer">
@@ -19,6 +24,7 @@ export function AlbumCard({ album, isFavorited, onToggleFavorite }: AlbumCardPro
           type="button"
           className="heart"
           aria-label={isFavorited ? `Remover ${album.title} dos favoritos` : `Favoritar ${album.title}`}
+          aria-pressed={isFavorited}
           onClick={() => onToggleFavorite(album.id)}
         >
           {isFavorited ? "♥" : "♡"}

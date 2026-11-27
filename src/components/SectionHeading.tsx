@@ -1,12 +1,13 @@
 export type SectionHeadingProps = {
+  id?: string;
   title: string;
   subtitle: string;
 };
 
-export function SectionHeading({ title, subtitle }: SectionHeadingProps) {
+export function SectionHeading({ id, title, subtitle }: SectionHeadingProps) {
   return (
     <div className="section-heading">
-      <h2>{title}</h2>
+      <h2 id={id}>{title}</h2>
       <p>{subtitle}</p>
     </div>
   );
